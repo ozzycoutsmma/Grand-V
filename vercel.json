@@ -1,9 +1,6 @@
 {
-  "name": "grand-v",
-  "private": true,
-  "version": "1.0.0",
-  "scripts": {
-    "build": "echo 'Static site is ready for Vercel deployment.'",
-    "start": "npx serve ."
-  }
+  "builds": [
+    { "src": "package.json", "use": "@vercel/static-build", "config": { "distDir": "public" } }
+  ],
+  "cleanUrls": true
 }
