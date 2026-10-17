@@ -1,0 +1,9 @@
+{
+  "name": "grand-v",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "echo 'Static site is ready for Vercel deployment.'",
+    "start": "npx serve ."
+  }
+}

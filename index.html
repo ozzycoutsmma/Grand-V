@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grand-V is a GTA V-inspired browser project targeting WebAssembly and WebGPU. This landing page is configured for Vercel deployment."
+    />
+    <title>Grand-V | Browser GTA V Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand">
+          <div class="brand-mark">G</div>
+          <span>Grand-V</span>
+        </div>
+        <nav class="nav">
+          <a href="#overview">Overview</a>
+          <a href="#features">Features</a>
+          <a href="#status">Status</a>
+          <a href="#deploy">Deploy</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">WebAssembly • WebGPU • Browser Runtime</p>
+            <h1>Bring GTA V to the browser, without the native desktop requirement.</h1>
+            <p class="lead">
+              Grand-V is a reverse-engineered browser project that aims to run GTA V-like
+              gameplay in a Chromium-based environment using WebAssembly and WebGPU.
+            </p>
+            <div class="cta-row">
+              <a class="primary" href="https://github.com/ozzycoutsmma/Grand-V" target="_blank" rel="noreferrer">View repo</a>
+              <a class="secondary" href="#features">Explore features</a>
+            </div>
+          </div>
+          <div class="hero-card">
+            <div class="status-pill">Vercel Ready</div>
+            <ul>
+              <li>Static hosting compatible</li>
+              <li>Browser-first deployment</li>
+              <li>Supports a WASM/WebGPU front end</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="overview" class="info-grid">
+          <article class="card">
+            <span class="tag">Project</span>
+            <h2>Browser-native ambition</h2>
+            <p>
+              The project currently contains a native Rust launcher and related packaging assets, and
+              it is designed around a browser-first architecture. Vercel is a practical host for the
+              website shell, documentation, and static assets that support the project.
+            </p>
+          </article>
+          <article class="card">
+            <span class="tag">Runtime</span>
+            <h2>WebAssembly / WebGPU foundation</h2>
+            <p>
+              This deployment model is intended to serve the web front end while preserving the native
+              app for desktop workflows. Browser runtime support depends on the user agent, GPU support,
+              and WebGPU availability in Chrome-based browsers.
+            </p>
+          </article>
+        </section>
+
+        <section id="features" class="feature-panel">
+          <div class="section-header">
+            <p class="eyebrow">What this gives you</p>
+            <h2>Vercel-friendly deployment setup</h2>
+          </div>
+          <div class="feature-list">
+            <div class="feature-item">
+              <h3>Static asset hosting</h3>
+              <p>Deploy a lightweight landing page and static files without a custom server.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Fast previews</h3>
+              <p>Every Vercel preview gets a clean, production-like deployment for quick feedback.</p>
+            </div>
+            <div class="feature-item">
+              <h3>Frontend ready</h3>
+              <p>The project can evolve toward a WASM build, browser runtime loader, and WebGPU assets.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="status" class="status-panel">
+          <div class="status-card">
+            <p class="eyebrow">Current status</p>
+            <h2>Ready for Vercel static delivery</h2>
+            <p>
+              This repo now has a static deployment configuration that works with Vercel. The source
+              repo itself is still primarily a native Rust project, so the browser game runtime must be
+              produced separately before being served in a full browser experience.
+            </p>
+          </div>
+        </section>
+
+        <section id="deploy" class="deploy-panel">
+          <div class="deploy-box">
+            <p class="eyebrow">Deploy</p>
+            <h2>Push to Vercel</h2>
+            <ol>
+              <li>Import this repository in Vercel.</li>
+              <li>Keep the default framework settings.</li>
+              <li>Deploy the project from the repository root.</li>
+            </ol>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
